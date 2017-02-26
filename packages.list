@@ -1,5 +1,4 @@
 ack-grep
-adobereader-enu:i386
 apt-file
 aptitude
 blender
@@ -7,8 +6,6 @@ build-essential
 ccache
 cmake
 cu
-docker-engine
-dropbox
 festival
 filezilla
 g++
@@ -19,12 +16,10 @@ git-gui
 gitk
 gnuplot
 gnuplot-x11
-google-chrome-stable
 gparted
 htop
 ipython
 kile
-megasync
 meld
 mosh
 nmap
@@ -40,12 +35,10 @@ rar
 ruby
 ruby-dev
 screen
-skype:i386
 sloccount
 sox
 spotify-client
 sshpass
-sublime-text
 swi-prolog
 swi-prolog-x
 sysstat

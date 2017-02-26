@@ -1,5 +1,10 @@
-#! /usr/bin/env sh
-sudo apt-get install $(grep -vE "^\s*#" ~/tools/packages.list  | tr "\n" " ")
+#! /usr/bin/env bash
+
+source ~/tools/packages/pycharm.sh
+source ~/tools/packages/spotify.sh
+
+sudo apt-get update
+sudo apt-get install -y $(grep -vE "^\s*#" ~/tools/packages.list  | tr "\n" " ")
 
 sudo pip install -r requirements.txt
 

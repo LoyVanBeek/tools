@@ -10,7 +10,7 @@ echo -e "\nsource ~/tools/git_terminal_setup.sh" >> ~/.bashrc
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 
-gnome-open "http://servicerobot.cstwiki.wtb.tue.nl/index.php?title=PC_Configuration#Ubuntu_14.04"
+#gnome-open "http://servicerobot.cstwiki.wtb.tue.nl/index.php?title=PC_Configuration#Ubuntu_14.04"
 
 git config --global credential.helper cache
 git config --global help.autocorrect 1
