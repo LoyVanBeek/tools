@@ -1,0 +1,7 @@
+[Unit]
+Description=Tarsnap service
+Documentation=man:tarsnap
+
+[Service]
+ExecStart=/home/loy/tools/tarsnap-backup.sh
+Restart=always
