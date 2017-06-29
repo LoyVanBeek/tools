@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# To set up postfix mailing: https://askubuntu.com/questions/522431/how-to-send-an-email-using-command-line and use an Google App Password
+
+/usr/bin/mail -t <<ERRMAIL
+To: $1
+From: systemd <root@$HOSTNAME>
+Subject: $2
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain; charset=UTF-8
+
+$(systemctl status --full "$2")
+ERRMAIL

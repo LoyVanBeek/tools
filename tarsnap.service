@@ -1,7 +1,7 @@
 [Unit]
 Description=Tarsnap service
 Documentation=man:tarsnap
+OnFailure=OnFailure=status-email-user@%n.service
 
 [Service]
 ExecStart=/home/loy/tools/tarsnap-backup.sh
-Restart=always
