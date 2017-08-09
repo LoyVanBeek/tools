@@ -3,7 +3,8 @@
 # git prompt
 #
 ####################
-# source ~/Documents/tools/git-prompt.sh
+source ~/tools/bash_git.sh
+
 GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWSTASHSTATE=1
 GIT_PS1_SHOWUNTRACKEDFILES=1
