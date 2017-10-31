@@ -1,0 +1,6 @@
+[Unit]
+Description=Change of external IP service
+OnFailure=status-email-user@%n
+
+[Service]
+ExecStart=/home/loy/tools/ipmailer/mail_changed_ip.sh
