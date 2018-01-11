@@ -5,3 +5,5 @@ function find-replace {
 }
 
 alias gti=git
+
+alias LS="ls -laFh"
