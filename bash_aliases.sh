@@ -16,3 +16,7 @@ function progress_dd(){
 	sudo -v
 	sudo dd if=$infile | pv -s $(stat --printf="%s" $infile) | sudo dd of=$outfile
 }
+
+if command -v bat >/dev/null 2>&1; then
+    alias cat=bat
+fi
