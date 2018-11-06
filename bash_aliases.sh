@@ -20,3 +20,7 @@ function progress_dd(){
 if command -v bat >/dev/null 2>&1; then
     alias cat=bat
 fi
+
+function record-window {
+	recordmydesktop --windowid=$(wmctrl -l | grep $1 | awk '{print $1}') -o ~/Videos/$1_$(date +"%Y_%m_%d_%H_%M_%S").ogv
+}
