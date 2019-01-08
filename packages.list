@@ -23,8 +23,8 @@ kile
 meld
 mosh
 nmap
-openssh-server
-owncloud-client
+# openssh-server
+# owncloud-client
 pinta
 putty
 pycharm-community
