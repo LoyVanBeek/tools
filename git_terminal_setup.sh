@@ -46,3 +46,9 @@ git config --global pull.rebase true
 
 # Enable git rerere: https://www.git-scm.com/book/en/v2/Git-Tools-Rerere
 git config --global rerere.enabled true
+
+# Remeber password
+git config --global credential.helper cache
+
+# Autocrrect for simple typos
+git config --global help.autocorrect 1
