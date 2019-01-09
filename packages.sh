@@ -1,7 +1,11 @@
 #! /usr/bin/env bash
 
-source ~/tools/packages/pycharm.sh
-source ~/tools/packages/spotify.sh
+echo "Installing additional packages.."
+for file in ~/tools/install.d/*
+do
+	[ -e "$file" ] || continue  # File should exist
+	source $file
+done
 
 sudo apt-get update
 sudo apt-get install -y $(grep -vE "^\s*#" ~/tools/packages.list  | tr "\n" " ")
