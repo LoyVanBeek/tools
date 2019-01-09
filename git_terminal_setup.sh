@@ -18,3 +18,6 @@ GIT_PS1_SHOWUPSTREAM="auto git"
 
 PS1='[\[\033[01;34m\]\w\[\033[00m\]]$(__git_ps1)\n'\
 '${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\] \$ '
+
+export VISUAL=vim
+export EDITOR="$VISUAL"
