@@ -24,3 +24,7 @@ fi
 function record-window {
 	recordmydesktop --windowid=$(wmctrl -l | grep $1 | awk '{print $1}') -o ~/Videos/$1_$(date +"%Y_%m_%d_%H_%M_%S").ogv
 }
+
+alias ping='grc ping'
+alias ifconfig='grc ifconfig'
+alias netstat='grc netstat'
