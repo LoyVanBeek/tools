@@ -28,3 +28,6 @@ function record-window {
 alias ping='grc ping'
 alias ifconfig='grc ifconfig'
 alias netstat='grc netstat'
+
+alias "c=xclip -selection clipboard"
+alias "v=xclip -o"
