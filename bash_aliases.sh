@@ -22,7 +22,10 @@ if command -v bat >/dev/null 2>&1; then
 fi
 
 function record-window {
-	recordmydesktop --windowid=$(wmctrl -l | grep $1 | awk '{print $1}') -o ~/Videos/$1_$(date +"%Y_%m_%d_%H_%M_%S").ogv
+        DATE=$(date +"%Y_%m_%d_%H_%M_%S")
+	recordmydesktop --windowid=$(wmctrl -l | grep $1 | awk '{print $1}') -o ~/Videos/$1_$DATE.mp4 --no-sound
+        mv ~/Videos/$1_$DATE.mp4.ogv ~/Videos/$1_$DATE.mp4
+	#ffmpeg -i ~/Videos/$1_$DATE.ogv -c:v libx264 -preset veryslow -crf 22 -c:a libmp3lame -qscale:a 2 -ac 2 -ar 44100 ~/Videos/$1_$DATE.mp4
 }
 
 alias ping='grc ping'
