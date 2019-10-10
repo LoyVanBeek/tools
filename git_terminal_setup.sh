@@ -52,3 +52,6 @@ git config --global credential.helper cache
 
 # Autocrrect for simple typos
 git config --global help.autocorrect 1
+
+# Remove weird a/ b/ prefixes (as per https://twitter.com/brandur/status/1182066723337293828)
+git config --global diff.noprefix true
