@@ -1,7 +1,11 @@
 alias notebook="(pushd .; cd ~/notebooks/ ; jupyter notebook; popd)"
 alias resource="source ~/.bashrc"
+#function find-replace {
+#	ack-grep --print0 -irl '$1' | xargs -0 -L1 sed  -i 's/$1/$2/g'
+#}
+
 function find-replace {
-	ack-grep --print0 -irl '$1' | xargs -0 -L1 sed  -i 's/$1/$2/g'
+        rg -li $1 | xargs -L1 sed -i 's/$1/$2/g'
 }
 
 alias gti=git
@@ -26,6 +30,7 @@ function record-window {
 	recordmydesktop --windowid=$(wmctrl -l | grep $1 | awk '{print $1}') -o ~/Videos/$1_$DATE.mp4 --no-sound
         mv ~/Videos/$1_$DATE.mp4.ogv ~/Videos/$1_$DATE.mp4
 	#ffmpeg -i ~/Videos/$1_$DATE.ogv -c:v libx264 -preset veryslow -crf 22 -c:a libmp3lame -qscale:a 2 -ac 2 -ar 44100 ~/Videos/$1_$DATE.mp4
+        echo "Video saved to ~/Videos/$1_$DATE.mp4"
 }
 
 alias ping='grc ping'
