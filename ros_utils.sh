@@ -27,27 +27,11 @@ use-ros2 ()
 	export ROS_DOMAIN_ID=99
     
     source /opt/ros/foxy/setup.bash
-	source ~/dev_ws/install/local_setup.bash
-	source ~/ws_moveit2/install/local_setup.bash
-        source /usr/share/colcon_cd/function/colcon_cd.sh
+    source ~/ros2_ws/install/local_setup.bash
 	popd > /dev/null
 }
 
-use-ros-both-mojin () 
-{
-    source ~/git/mojin_dev_tools/mojin_bash.sh
-
-    pushd . > /dev/null
-    export ROS_DOMAIN_ID=99
-    
-    source /opt/ros/foxy/local_setup.bash
-    source ~/dev_ws/install/local_setup.bash
-    source ~/ws_moveit2/install/local_setup.bash
-    source /usr/share/colcon_cd/function/colcon_cd.sh
-    popd > /dev/null
-}
-
-use-ros-both-std () 
+use-ros-both () 
 {
     source /opt/ros/noetic/setup.sh
 
@@ -55,10 +39,7 @@ use-ros-both-std ()
     export ROS_DOMAIN_ID=99
     
     source /opt/ros/foxy/local_setup.bash
-    source ~/dev_ws/install/local_setup.bash
-    source ~/ws_moveit2/install/local_setup.bash
+    source ~/ros2_ws/install/local_setup.bash
     source /usr/share/colcon_cd/function/colcon_cd.sh
     popd > /dev/null
 }
-
-export ROSCONSOLE_FORMAT='[${node}:${function}:${line}][${severity}] [${time}]: ${message}'
