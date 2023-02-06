@@ -13,4 +13,7 @@ Installs some very handy tools:
 
 But also sets up git with some options like to rebase by default, enable rerere, git prompt to summarize status and show branch name etc.
 
-Also installs a set of apt and pip packages I often use. 
+Also installs a set of apt and pip packages I often use.
+
+## TODO
+- Include [`atuin`](https://github.com/ellie/atuin)
