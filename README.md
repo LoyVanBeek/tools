@@ -16,4 +16,6 @@ But also sets up git with some options like to rebase by default, enable rerere,
 Also installs a set of apt and pip packages I often use.
 
 ## TODO
-- Include [`atuin`](https://github.com/ellie/atuin)
+- Include
+    - [`atuin`](https://github.com/ellie/atuin)
+    - [Mergiraf](https://mergiraf.org/usage.html)
